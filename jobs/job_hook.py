@@ -111,7 +111,7 @@ class LaunchAWXJobTemplate(JobHookReceiver):
                 "device_name": obj.name,
                 "device_id": str(obj.pk),
                 "device_location": str(obj.location.name) if obj.location else "",
-                "triggered_from": "nautobot-job-button",
+                "triggered_from": "nautobot-job-hook",
             }
         }
 
